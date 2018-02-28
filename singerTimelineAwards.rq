@@ -1,0 +1,13 @@
+#defaultView:Timeline
+
+SELECT ?award ?awardLabel ?year
+
+WHERE 
+
+{
+
+  wd:Q7309 p:P166 [ps:P166 ?award; pq:P585 ?year].
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+}
