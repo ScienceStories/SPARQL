@@ -1,0 +1,13 @@
+SELECT ?taxon ?taxonLabel WHERE {
+
+  ?taxon wdt:P225 ?taxonName;
+
+        p:P225 [pq:P405 wd:Q6376201].
+
+        
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+
+  
+
+}
