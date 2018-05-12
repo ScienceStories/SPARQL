@@ -1,0 +1,7 @@
+SELECT (COUNT(?statement) AS ?statements) WHERE {
+
+  ?entry ?p ?statement.
+
+  ?statement pr:P248 wd:Q46835116.
+
+}
