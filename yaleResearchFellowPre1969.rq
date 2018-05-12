@@ -1,0 +1,14 @@
+SELECT DISTINCT ?item ?label  WHERE {
+  ?item wdt:P69 wd:Q1961140.
+  ?item p:P69 _:b0.
+  _:b0 pq:P512 wd:Q913404.
+  ?item p:P69 _:b1.
+  _:b1 pq:P582 ?year.
+  ?item wdt:P21 wd:Q6581072.
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en".
+    ?item rdfs:label ?label.
+   
+  }
+  FILTER(YEAR(?year) < 1969).
+}
