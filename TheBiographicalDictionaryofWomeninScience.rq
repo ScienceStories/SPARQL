@@ -1,0 +1,11 @@
+SELECT (COUNT (?statement) as ?statements)
+
+WHERE
+
+{
+
+  ?entry ?p ?statement .
+
+  ?statement pr:P248  wd:Q28721132 .
+
+}
