@@ -1,0 +1,1 @@
+SELECT ?item ?label ?year WHERE { ?item wdt:P108 wd:Q49112. ?item wdt:P570 ?year. ?item wdt:P21 wd:Q6581072. SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . ?item rdfs:label ?label } }
